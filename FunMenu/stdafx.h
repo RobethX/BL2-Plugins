@@ -11,6 +11,3 @@
 #define IMGUI_DEFINE_MATH_OPERATORS
 #include "imgui/imgui_internal.h"
 #include "imgui/directx9/imgui_impl_dx9.h"
-
-#include <easyhook.h>
-#pragma comment(lib, "EasyHook32.lib")
