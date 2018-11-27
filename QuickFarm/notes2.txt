@@ -1,0 +1,68 @@
+﻿(0-8;000/000) [07 41 00 9A 38 3A 19 01 08 7A 00 00 09 00 49 3C 00 00 00 01 49 3C 00 00 38 3A 24 00 16]
+	JumpIfNotToken(41/29)
+	if(
+	)
+
+    (1-8;003/003) [9A 38 3A 19 01 08 7A 00 00 09 00 49 3C 00 00 00 01 49 3C 00 00 38 3A 24 00 16]
+    	NativeFunctionToken(38/26)
+    	WorldInfo.NetMode == NM_Standalone
+
+        (2-5;004/005) [3A 19 01 08 7A 00 00 09 00 49 3C 00 00 00 01 49 3C 00 00]
+        	ByteToIntToken(32/19)
+        	WorldInfo.NetMode
+
+            (3-5;006/006) [19 01 08 7A 00 00 09 00 49 3C 00 00 00 01 49 3C 00 00]
+            	ContextToken(30/18)
+            	WorldInfo.NetMode
+
+                (4-4;007/007) [01 08 7A 00 00]
+                	InstanceVariableToken(9/5)
+                	WorldInfo
+
+                (5-5;01B/013) [01 49 3C 00 00]
+                	InstanceVariableToken(9/5)
+                	NetMode
+
+        (6-7;024/019) [3A 24 00]
+        	ByteToIntToken(4/3)
+        	NM_Standalone
+
+            (7-7;026/01A) [24 00]
+            	ByteConstToken(2/2)
+            	NM_Standalone
+
+        (8-8;028/01C) [16]
+        	EndFunctionParmsToken(1/1)
+        	)
+
+(9-14;029/01D) [1B 45 13 00 00 00 00 00 00 1F 3F 72 65 73 74 61 72 74 00 24 02 4A 4A 16]
+	VirtualFunctionToken(24/24)
+	ClientTravel("?restart", NM_ListenServer)
+
+    (10-10;032/026) [1F 3F 72 65 73 74 61 72 74 00]
+    	StringConstToken(10/10)
+    	"?restart"
+
+    (11-11;03C/030) [24 02]
+    	ByteConstToken(2/2)
+    	NM_ListenServer
+
+    (12-12;03E/032) [4A]
+    	NoParmToken(1/1)
+    	,
+
+    (13-13;03F/033) [4A]
+    	NoParmToken(1/1)
+    	,
+
+    (14-14;040/034) [16]
+    	EndFunctionParmsToken(1/1)
+    	)
+
+(15-16;041/035) [04 0B]
+	ReturnToken(2/2)
+	return
+
+    (16-16;042/036) [0B]
+    	NothingToken(1/1)
+    	

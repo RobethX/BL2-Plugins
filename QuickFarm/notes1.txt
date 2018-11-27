@@ -1,0 +1,6 @@
+﻿set gameinfo bUseSeamlessTravel true
+set worldinfo nexttraveltype TRAVEL_Partial
+#servertravel Loader?Protocol="unreal"?listen?Name="Player?Class=?Character=?Protocol="unreal"?Portal=?Valid=1?game=WillowGame.WillowCoopGameInfo false true
+servertravel Loader?Protocol="unreal"?listen?Name="Player"?Class=?Character=?Portal=?Valid=1?game=WillowGame.WillowCoopGameInfo true true
+
+servertravel menumap?Protocol="unreal"?LISTEN?Name="Player"?Class=?Character=?Portal=?Valid=1?game=WillowGame.WillowCoopGameInfo false true
